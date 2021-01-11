@@ -3,29 +3,13 @@
 <h4 class="text-md-center display-4">
     Genadi Ivanov Mladenov
 </h4>
+<div class="text-md-center">
+    Email:genadi.i.mladenov@gmail.com
+</div>
 <div class="text-md-center subheading mb-5">
-    Email:genadi.i.mladenov@gmail.com <i class="fas fa-ellipsis-h"></i> Phone:(+359)876 108 948
+    Phone:(+359)876 108 948
 </div>
-<hr class="m-0" />
-<div style="padding-bottom:5px;font-weight:bold;font-size:15px;color:#000000;">Work experience as a developer</div>
-<div class="d-flex flex-column flex-md-row justify-content-between">
-    <div class="flex-grow-1">
-        <h3 class="mb-0">Null</h3>
-    </div>
-</div>
-<br />
-<hr class="m-0" />
-<div style="padding-bottom:5px;font-weight:bold;font-size:15px;color:#000000;">Education</div>
-<div class="d-flex flex-column flex-md-row justify-content-between">
-    <div class="flex-grow-1">
-        <h3 class="mb-0">SoftUni</h3>
-        <div class="subheading mb-3">Software Engineering with C#</div>
-    </div>
-    <div class="flex-grow-1">
-        <h3 class="mb-0">AVO-Bell</h3>
-        <div class="subheading mb-3">English Level <span style="color:red">A</span></div>
-    </div>
-</div>
+
 <hr class="m-0" />
 <div style="padding-bottom:5px;font-weight:bold;font-size:15px;color:#000000;">Computer Skills & Tools</div>
 <div class="d-flex flex-column flex-md-row justify-content-between">
@@ -64,9 +48,34 @@
             Good at working under pressure
         </li>
         <li>
-            I like new challenges
+            Inquisitive mind
+        </li>
+        <li>
+            Flexible
+        </li>
+        <li>
+            Problem solver
         </li>
     </ul>
+</div>
+<hr class="m-0" />
+<div style="padding-bottom:5px;font-weight:bold;font-size:15px;color:#000000;">Work experience as a developer</div>
+<div class="d-flex flex-column flex-md-row justify-content-between">
+    <div class="flex-grow-1">
+        <h3 class="subheading mb-3">Null</h3>
+    </div>
+</div>
+<hr class="m-0" />
+<div style="padding-bottom:5px;font-weight:bold;font-size:15px;color:#000000;">Education</div>
+<div class="d-flex flex-column flex-md-row justify-content-between">
+    <div class="flex-grow-1">
+        <h3 class="mb-0">SoftUni</h3>
+        <div class="subheading mb-3">Software Engineering with C#</div>
+    </div>
+    <div class="flex-grow-1">
+        <h3 class="mb-0">AVO-Bell</h3>
+        <div class="subheading mb-3">English Level <span style="color:red">A</span></div>
+    </div>
 </div>
 <hr class="m-0" />
 <div style="padding-bottom:5px;font-weight:bold;font-size:15px;color:#000000;">Marking</div>
@@ -77,6 +86,27 @@
 </div>
 <hr class="m-0" />
 <br />
-<input id="printButton" type="button" class="btn btn-primary" value="Print" onclick="window.print();return false;" />
+<button id="printButton" type="button" class="btn btn-primary" value="Print" onclick="window.print(); ">
+    Print
+</button>
 <br />
 <br />
+
+@code {
+
+    private void HideButton()
+    {
+        //document.getElementById('printButton').style.display = 'none';
+
+        //private void HideButton()
+        //{
+        //    let btn = document.getElementById("printBtn");
+
+        //    btn.onclick = function printInvoice() {
+        //        btn.style.display = "none";
+        //        window.print();
+        //        window.location.href = "/Home/Index";
+        //    }
+        //}
+    }
+}
