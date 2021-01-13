@@ -1,4 +1,5 @@
 ﻿@page "/print"
+@inject IJSRuntime JsRuntime;
 
 <h4 class="text-md-center display-4">
     Genadi Ivanov Mladenov
@@ -86,27 +87,21 @@
 </div>
 <hr class="m-0" />
 <br />
-<button id="printButton" type="button" class="btn btn-primary" value="Print" onclick="window.print(); ">
+<button style="display: @visualizationButton" type="button" class="btn btn-primary" @onclick="HideButton">
     Print
 </button>
 <br />
 <br />
 
 @code {
+    private string visualizationButton = "normal";
 
     private void HideButton()
     {
-        //document.getElementById('printButton').style.display = 'none';
+        visualizationButton = "none";
 
-        //private void HideButton()
-        //{
-        //    let btn = document.getElementById("printBtn");
+        JsRuntime.InvokeVoidAsync("print");
 
-        //    btn.onclick = function printInvoice() {
-        //        btn.style.display = "none";
-        //        window.print();
-        //        window.location.href = "/Home/Index";
-        //    }
-        //}
+        visualizationButton = "normal";
     }
 }
